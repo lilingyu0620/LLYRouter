@@ -15,7 +15,7 @@
 
 @implementation LLYRouter
 
-- (void)llyRouterWithSchemes:(NSString *)schemes method:(LLYRouterMethod)method param:(NSDictionary *)param{
++ (void)llyRouterWithSchemes:(NSString *)schemes method:(LLYRouterMethod)method param:(NSDictionary *)param{
     
     Class<LLYRouterHandle> class = NSClassFromString(schemes);
     if ([class conformsToProtocol:@protocol(LLYRouterHandle)]) {

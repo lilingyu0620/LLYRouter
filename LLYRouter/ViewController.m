@@ -11,7 +11,6 @@
 
 @interface ViewController ()
 
-@property (nonatomic, strong) LLYRouter *llyRouter;
 
 @end
 
@@ -20,14 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.llyRouter = [[LLYRouter alloc]init];
 }
 
 - (IBAction)push:(id)sender {
-    [self.llyRouter llyRouterWithSchemes:@"LLYTestViewController" method:LLYRouterMethod_Push param:@{@"userId":@"123",@"nickName":@"lly"}];
+    [LLYRouter llyRouterWithSchemes:@"LLYTestViewController" method:LLYRouterMethod_Push param:@{@"userId":@"123",@"nickName":@"lly"}];
 }
 - (IBAction)present:(id)sender {
-    [self.llyRouter llyRouterWithSchemes:@"LLYTestViewController" method:LLYRouterMethod_Present param:@{@"userId":@"123",@"nickName":@"lly"}];
+    [LLYRouter llyRouterWithSchemes:@"LLYTestViewController" method:LLYRouterMethod_Present param:@{@"userId":@"123",@"nickName":@"lly"}];
 }
 
 @end

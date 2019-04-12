@@ -13,12 +13,11 @@ typedef NS_ENUM(NSUInteger, LLYRouterMethod) {
     LLYRouterMethod_Present,
 };
 
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LLYRouter : NSObject
 
-- (void)llyRouterWithSchemes:(NSString *)schemes method:(LLYRouterMethod)method param:(NSDictionary *)param;
++ (void)llyRouterWithSchemes:(NSString *)schemes method:(LLYRouterMethod)method param:(NSDictionary *)param;
 
 @end
 
