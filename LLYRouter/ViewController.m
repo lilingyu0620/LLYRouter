@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LLYRouter.h"
+#import "LLYRouterRequest.h"
 
 @interface ViewController ()
 
@@ -22,10 +23,12 @@
 }
 
 - (IBAction)push:(id)sender {
-    [LLYRouter llyRouterWithSchemes:@"LLYTestViewController" method:LLYRouterMethod_Push param:@{@"userId":@"123",@"nickName":@"lly"}];
+    LLYRouterRequest *request = [[LLYRouterRequest alloc]initWithSchemes:@"LLYTestViewController" method:LLYRouterMethod_Push parameters:@{@"userId":@"123",@"nickName":@"lly"}];
+    [LLYRouter llyRouterWithRequest:request];
 }
 - (IBAction)present:(id)sender {
-    [LLYRouter llyRouterWithSchemes:@"LLYTestViewController" method:LLYRouterMethod_Present param:@{@"userId":@"123",@"nickName":@"lly"}];
+    LLYRouterRequest *request = [[LLYRouterRequest alloc]initWithSchemes:@"LLYTestViewController" method:LLYRouterMethod_Present parameters:@{@"userId":@"123",@"nickName":@"lly"}];
+    [LLYRouter llyRouterWithRequest:request];
 }
 
 @end

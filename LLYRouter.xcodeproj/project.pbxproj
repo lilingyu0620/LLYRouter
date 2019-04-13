@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A37D9B92261AED800A7B379 /* LLYRouterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A37D9B82261AED800A7B379 /* LLYRouterRequest.m */; };
 		0A38403B225F3D8800682400 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A38403A225F3D8800682400 /* AppDelegate.m */; };
 		0A38403E225F3D8800682400 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A38403D225F3D8800682400 /* ViewController.m */; };
 		0A384041225F3D8800682400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A38403F225F3D8800682400 /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A37D9B72261AED800A7B379 /* LLYRouterRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYRouterRequest.h; sourceTree = "<group>"; };
+		0A37D9B82261AED800A7B379 /* LLYRouterRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYRouterRequest.m; sourceTree = "<group>"; };
 		0A384036225F3D8800682400 /* LLYRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLYRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A384039225F3D8800682400 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A38403A225F3D8800682400 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 		0A38406B225F3D9900682400 /* LLYRouter */ = {
 			isa = PBXGroup;
 			children = (
+				0A37D9B72261AED800A7B379 /* LLYRouterRequest.h */,
+				0A37D9B82261AED800A7B379 /* LLYRouterRequest.m */,
 				0A38406C225F3DBB00682400 /* LLYRouter.h */,
 				0A38406D225F3DBB00682400 /* LLYRouter.m */,
 				0A38406F225F3EB400682400 /* LLYRouterHandle.h */,
@@ -288,6 +293,7 @@
 			files = (
 				0A38406E225F3DBB00682400 /* LLYRouter.m in Sources */,
 				0A38403E225F3D8800682400 /* ViewController.m in Sources */,
+				0A37D9B92261AED800A7B379 /* LLYRouterRequest.m in Sources */,
 				0A384049225F3D8A00682400 /* main.m in Sources */,
 				0A384072225F492300682400 /* LLYTestViewController.m in Sources */,
 				0A38403B225F3D8800682400 /* AppDelegate.m in Sources */,

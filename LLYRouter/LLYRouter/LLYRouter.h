@@ -7,17 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
-typedef NS_ENUM(NSUInteger, LLYRouterMethod) {
-    LLYRouterMethod_Push = 0,
-    LLYRouterMethod_Present,
-};
+#import "LLYRouterRequest.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LLYRouter : NSObject
 
-+ (void)llyRouterWithSchemes:(NSString *)schemes method:(LLYRouterMethod)method param:(NSDictionary *)param;
++ (void)llyRouterWithRequest:(LLYRouterRequest *)request;
 
 @end
 
